@@ -1,0 +1,19 @@
+{
+  "name": "grafico",
+  "version": "1.0.0",
+  "description": "Grafico de Superficia para TP IAA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.html"
+  },
+  "author": "Tincho",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^4.0.0",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "papaparse": "^4.6.1",
+    "vis": "^4.21.0"
+  }
+}
