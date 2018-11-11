@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Graph 3D animation demo</title>
+  <title>Grafico Resultados TP IAA</title>
 
   <style type="text/css">
   body {
@@ -42,19 +42,20 @@
         // read all data
         for (var row = 0; row < csvArray.length; row++) {
           if (skipValue == false) {
-            data.add({x:parseFloat(csvArray[row][0]),
-              y:parseFloat(csvArray[row][2]),
-              z:parseFloat(csvArray[row][1]),
-                style:parseFloat(csvArray[row][1])});
+            data.add({x:parseFloat(csvArray[row][7]),
+              y:parseFloat(csvArray[row][8]),
+              z:parseFloat(csvArray[row][2]),
+                style:parseFloat(csvArray[row][2])});
           }
           var skipValue = false;
         }
         console.log("Data: ", data);
       // specify options
           var options = {
-            width:  '600px',
-            height: '600px',
-            style: 'dot-color',
+            width:  '1000px',
+            height: '1000px',
+            style: 'dot',
+            dotSizeRatio: 0.02,
             showPerspective: true,
             showGrid: true,
             keepAspectRatio: true,
@@ -79,7 +80,7 @@
 </head>
 
 <body>
-  <div id="mygraph"></div>
+  <div id="mygraph" align="center"></div>
 
   <div id="info"></div>
 </body>
